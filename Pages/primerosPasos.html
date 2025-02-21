@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- archivo css-->
+        <link rel="stylesheet" href="../Styles/style.css" />
+        <title>Primeros pasos</title>
+    </head>
+    <body>
+        <header>
+            <nav class="navbar">
+                <a class="logo" href="../index.html">
+                    <img  src="../Assets/img/logo.png" alt="ZoneTech Logo" width="150" />
+                </a>
+                <ul class="lista">
+                    <li>
+                        <a href="../index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="../Pages/historia.html">Historia</a>
+                    </li>
+                    <li>
+                        <a href="../Pages/distribuciones.html">Distribuciones</a>
+                    </li>
+                    <li>
+                        <a href="../Pages/primerosPasos.html">Primeros pasos</a>
+                    </li>
+                    <li>
+                        <a href="../Pages/contacto.html">Contacto</a>
+                    </li>
+                    <li>
+                        <a class="icono" href="https://youtube.com"></a>
+                    </li>
+                    <li><a class="icono" href="https://github.com"></a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section class="titulo-parrafo">
+                <h1>Primeros pasos</h1>
+                <p>
+                    Linux es un sistema operativo que, al igual que otros sistemas como Windows o macOS, se puede utilizar sin necesidad de interactuar directamente con la terminal. Muchas aplicaciones gráficas están disponibles, y la mayoría de las tareas cotidianas se pueden realizar usando interfaces gráficas, como el explorador de archivos o programas específicos.
+                </p>
+            </section>
+
+            <section class="titulo-imagen">
+                <h2>¿Qué es la terminal?</h2>
+                <figure>
+                    <img src="../Assets/img/linux-penguin-terminal.png" alt="">
+                </figure>
+                <p>
+                    Es un intérprete de comandos u órdenes (conocido como terminal, consola o shell) que hace de interfaz entre el usuario y el propio sistema operativo. Es decir, mediante la terminal podemos acceder al sistema operativo sin utilizar la interfaz gráfica y realizar todo tipo de tareas en modo texto.
+                </p>
+            </section>
+
+            <section class="titulo-parrafo">
+                <h2>Linea de comandos</h2>
+                <p>
+                  Los comandos de Linux te permiten controlar tu sistema desde la interfaz de línea de comandos (CLI) en lugar de utilizar tu ratón o trackpad. Son instrucciones de texto introducidas en el terminal para indicarle a tu sistema exactamente qué hacer.
+                </p>
+                <p>
+                  Los comandos que ingreses en el terminal de Linux distinguen entre mayúsculas y minúsculas y siguen una sintaxis como “comando -opciones argumentos“. Puedes combinarlos para tareas complejas mediante pipelines y redirecciones.
+                </p>
+            </section>
+
+            <section class="titulo-parrafo">
+                <h3>Comandos Básicos de Linux</h3>
+                <ul>
+                    <li><strong>ls</strong> - Listar contenido del directorio:</li>
+                    <p>Lista el contenido de un directorio, mostrando todos los archivos y subdirectorios contenidos en su interior.</p>
+                    <p>Sin opciones o argumentos, ls mostrará el contenido del directorio de trabajo actual. Puedes pasar un nombre de ruta para listar archivos y carpetas en esa ubicación en su lugar.</p>
+                    <p><strong>Sintaxis</strong></p>
+                    <code>ls [opciones] [directorio]</code>
+                    <p>Las opciones pueden ser:</p>
+
+                    <ul>
+                        <li><strong>-a</strong> - Muestra todos los archivos, incluidos los ocultos.</li>
+                        <li><strong>-l</strong> - Muestra una lista detallada de archivos y directorios.</li>
+                        <li><strong>-R</strong> - Lista de forma recursiva todo el contenido de los subdirectorios, descendiendo indefinidamente en carpetas secundarias.</li>
+                        <li><strong>-S</strong> - Ordena los resultados por tamaño de archivo, comenzando por el más grande.</li>
+                    </ul>
+
+                    <li><strong>cd - Cambiar de directorio:</strong></li>
+                    <p>
+                      El comando cd se utiliza para navegar entre directorios. Te permite moverte desde el directorio de trabajo actual a una nueva ubicación en el sistema de archivos.
+                    </p>
+                    <p>
+                      Cuando ejecutas el comando cd por sí mismo, te llevará al directorio de inicio. También puedes pasar una ruta específica para cambiar a ella. Por ejemplo:
+                    </p>
+
+                    <ul>
+                        <li>cd /usr/local – Cambia al directorio /usr/local </li>
+                        <li>cd .. – Te mueve un nivel atrás hacia el directorio principal </li>
+                    </ul>
+
+                    <li><strong>mkdir</strong> - Crear un nuevo directorio:</li>
+                    <p>
+                      El comando mkdir te permite crear una nueva carpeta. Simplemente, específicas el nombre del directorio a crear.
+                    </p>
+                    <p><strong>Sintaxis</strong></p> 
+                    <code>mkdir [opción] [directorio]</code>
+                    <p>Algunas opciones útiles de mkdir:</p>
+
+                    <ul>
+                        <li><strong>-p</strong> Crea directorios principales de forma recursiva según sea necesario.</li>
+                        <li><strong>-v</strong> Muestra un resultado detallado que indica los directorios creados.</li>
+                    </ul>
+
+                    <li><strong>cp</strong>- Copiar archivos y directorios</li>
+                    <p>
+                      El comando cp copia archivos o directorios de una ubicación a otra. Requiere pasar una ruta de origen y un destino.
+                    </p>
+                    <p><strong>Sintaxis</strong></p>
+                    <code>cp [opciones] [origen] [destino]</code>
+                    <p>Opciones útiles:</p>
+
+                    <ul>
+                        <li><strong>-r</strong> Copia directorios de forma recursiva, descendiendo a subdirectorios para copiar su contenido también. </li>
+                        <li><strong>-v</strong>  Muestra un resultado detallado que indica los detalles de cada archivo mientras se copia. Útil para confirmar exactamente lo que se copió.</li>
+                        <li><strong>–i</strong> Copia un fichero o directorio y pregunta antes de sobrescribir si se diese el caso.</li>
+                    </ul>
+
+                    <li><strong>mv</strong> - Mover o renombrar archivos y directorios</li>
+                    <p>
+                      El comando mv se utiliza para mover archivos o directorios a una ubicación diferente o renombrarlos. A diferencia del comando anterior, los archivos de la ruta de origen se eliminan después de haber sido movidos al destino.
+                    </p>
+                    <p>
+                      También puedes usar el comando mv para renombrar archivos, ya que solo necesitas cambiar las rutas de origen y destino al antiguo y nuevo nombre.
+                    </p>
+                    <p><strong>Sintaxis</strong></p>
+                    <code>mv [opciones] [origen] [destino]</code>
+
+                    <li><strong>rm</strong> - Eliminar archivos y directorios</li>
+                    <p>
+                      El comando rm elimina archivos y directorios. Úsalo con precaución porque los archivos y directorios eliminados no se pueden recuperar.
+                    </p>
+                    <p><strong>Sintaxis</strong></p>
+                    <code>rm [opciones] [nombre]</code>
+                    <p>Opciones útiles</p>
+
+                    <ul>
+                        <li><strong>-r</strong> – Elimina directorios de forma recursiva, incluyendo todos los contenidos dentro de ellos. Necesario al eliminar directorios.</li>
+                        <li><strong>-f</strong> – Forzar la eliminación y suprimir todas las solicitudes de confirmación.</li>
+                        <li><strong>-i</strong> – Solicitar confirmación antes de eliminar cada archivo o directorio. Proporciona seguridad contra borrado accidental. </li>
+                    </ul>
+
+                    <p>
+                      <strong>Advertencia:</strong> El comando rm borra permanentemente archivos y carpetas, así que úsalo con extrema precaución. Si se usa con privilegios de sudo, también podrías eliminar por completo el directorio raíz y Linux dejará de funcionar después de reiniciar tu computadora.
+                    </p>
+
+                    <li><strong>touch</strong> - Crear un nuevo archivo vacio</li>
+                    <p>
+                      El comando touch se utiliza para crear instantáneamente un nuevo archivo vacío. Esto es útil cuando necesitas un archivo vacío para llenarlo con datos más tarde.
+                    </p>
+                    <p><strong>Sintaxis</strong></p>
+                    <code>touch [opciones] [nombredearchivo]</code>
+                    <p>Opciones</p>
+
+                    <ul>
+                        <li><strong>-c</strong> - No crea el archivo si ya existe. Evita sobrescribir archivos existentes accidentalmente.</li>
+                        <li><strong>-m</strong> - En lugar de crear un nuevo archivo, actualiza la marca de tiempo en un archivo existente. Esto se puede usar para cambiar la hora de modificación</li>
+                    </ul>
+
+                    <li><strong>cat</strong></li>
+                    <p>
+                      Se utiliza para mostrar el contenido de un archivo, concatenar múltiples archivos o crear nuevos archivos. Es uno de los comandos más básicos y útiles cuando se trabaja con la línea de comandos.
+                    </p>
+                    <p><strong>Sintaxis</strong></p>
+                    <code>cat [opciones] [archivo(s)]</code>
+                    <p><strong>Funciones:</strong></p>
+                    <p>Mostrar el contenido de un archivo</p>
+                    <code>cat archivo.txt</code>
+                    <p>
+                      Concatenar múltiples archivos: Muestra el contenido de varios archivos uno después de otro. Esto es útil para ver el contenido de varios archivos sin abrir cada uno por separado.
+                    </p>
+                    <code>cat archivo1.txt archivo2.txt</code>
+                    <p>
+                      Crear un nuevo archivo: Puedes crear un archivo y escribir contenido en él desde la terminal. Usa Ctrl+D para finalizar la entrada.
+                    </p> 
+                    <code>cat > nuevoarchivo.txt</code>
+                    <p>Opciones</p>
+
+                    <ul>
+                        <li><strong>-n</strong> - Muestra el contenido del archivo con números de línea.</li>
+                        <li><strong>-b</strong> -  Similar a -n, pero no numera las líneas en blanco.</li>
+                    </ul>
+                </ul>
+            </section>
+
+            <section class="titulo-parrafo">
+                <h1>Lo importante de un sistema: las aplicaciones</h1>
+                <figure class="imagen-grande">
+                    <img src="../Assets/img/apps.png" alt="">
+                </figure>
+                <p>
+                    Un sistema operativo, por muy poderoso que sea, no sirve de mucho sin aplicaciones que nos permitan realizar nuestras tareas del día a día. Ya sea para navegar por internet, editar documentos, jugar, o programar, las aplicaciones son la esencia de cualquier experiencia informática. Por eso, contar con un buen sistema para gestionar nuestras aplicaciones es clave.
+                </p>
+                <p>
+                    Ahí es donde entran en juego los gestores de paquetes.
+                </p>
+            </section>
+
+            <section class="titulo-parrafo">
+                <h2>¿Qué es un gestor de paquetes?</h2>
+                <p>
+                    Un gestor de paquetes es una herramienta que facilita la instalación, actualización, configuración y eliminación de aplicaciones en tu sistema. En lugar de descargar programas desde sitios web como en otros sistemas operativos, en Linux utilizamos gestores de paquetes para acceder a repositorios oficiales, que son colecciones seguras y organizadas de software. Esto no solo te ahorra tiempo, sino que garantiza que el software sea confiable y esté optimizado para tu sistema.
+                </p>
+            </section>
+            <section class="titulo-parrafo">
+                <h3>Mi recomendación personal</h3>
+                <p>
+                    En mi experiencia, instalar aplicaciones desde la terminal usando un gestor de paquetes es rápido, limpio y eficiente. Prefiero este método porque me da más control y me asegura que siempre estoy obteniendo versiones actualizadas directamente desde los repositorios oficiales. Además, no necesitas depender de tiendas de aplicaciones gráficas que pueden ser más lentas o complicadas.
+                </p>
+                <p>
+                    Si es nuevo, no se preocupe. Con unos pocos comandos básicos puede instalar, actualizar y eliminar programas sin complicaciones.
+                </p>
+
+                <p>
+                    Es importante tener en cuenta que cada distribución de Linux utiliza un gestor de paquetes diferente, dependiendo de cómo está diseñada. Algunos ejemplos comunes son:
+                </p>
+                <ul>
+                    <li>
+                        Arch Linux y derivados: Usan pacman. Este gestor es conocido por su rapidez y simplicidad. Los comandos son cortos y fáciles de recordar.
+                    </li>
+                    <li>
+                      Debian y derivados (como Ubuntu y Linux Mint): Utilizan apt, que es muy popular y ampliamente documentado.
+                    </li>
+                    <li>
+                      Fedora y Red Hat: Usan dnf o su predecesor, yum. Estos gestores son potentes y manejan dependencias de forma eficiente.
+                    </li>
+                </ul>
+                <p>Aunque los comandos cambian de un gestor a otro, la idea básica es la misma: instalar, actualizar y eliminar aplicaciones de manera sencilla y confiable.</p>
+            </section>
+
+            <section class="titulo-parrafo">
+                <h2>Instalacion de aplicaciones</h2>
+                <p>
+                    En la mayoría de las distribuciones de Linux, puedes instalar aplicaciones desde la terminal utilizando el comando <code>sudo</code>, seguido del gestor de paquetes específico de tu distribución, una instrucción como <code>install</code>, y el nombre del paquete que deseas instalar. Por ejemplo:
+                </p>
+                <pre>
+                    <code>
+                        sudo [gestor-de-paquetes] [instrucción] [nombre-del-paquete]
+                    </code>
+                </pre>
+                <p>
+                    Por ejemplo, en <strong>Ubuntu</strong>, el gestor de paquetes es <code>apt</code>, así que para instalar el navegador Firefox:
+                </p>
+                <pre>
+                    <code>
+                        sudo apt install firefox
+                    </code>
+                </pre>
+                <p>
+                    Las instrucciones básicas que se utilizan comúnmente con los gestores de paquetes son:
+                </p>
+
+                <ul>
+                    <li>install</li>
+                    <li>remove</li>
+                    <li>update</li>
+                    <li>search</li>
+                </ul>
+                <p>
+                    En <strong>Arch Linux</strong>, las instrucciones básicas son un poco diferentes y se usan los siguientes comandos:
+                </p>
+                <ul>
+                    <li><code>-S</code>: para instalar un paquete. Ejemplo: <code>sudo pacman -S firefox</code></li>
+                    <li><code>-R</code>: para eliminar un paquete. Ejemplo: <code>sudo pacman -R firefox</code></li>
+                    <li><code>-Ss</code>: para buscar un paquete en los repositorios. Ejemplo: <code>pacman -Ss firefox</code></li>
+                    <li><code>-Syu</code>: para actualizar todos los paquetes instalados en el sistema. Ejemplo: <code>sudo pacman -Syu</code></li>
+                </ul>
+                <p>
+                    Recuerda siempre verificar el gestor de paquetes específico de tu distribución, ya que las instrucciones pueden variar.
+                </p>
+            </section>
+            
+            <section class="titulo-parrafo">
+                <p>
+                  Dominar los comandos básicos de Linux es fundamental para quienes desean aprovechar al máximo este sistema operativo. Aunque las interfaces gráficas son útiles, trabajar con la terminal ofrece un control más preciso y rápido sobre el sistema, facilitando tareas de administración, automatización y personalización. Los comandos mencionados son solo el principio, y con el tiempo descubrirás muchos otros que te permitirán realizar tareas aún más complejas.
+                </p>
+                <p>
+                  Si estás comenzando con Linux, te animo a que practiques estos comandos de forma regular para familiarizarte con ellos. La terminal puede parecer intimidante al principio, pero con paciencia y práctica, te volverás más ágil y eficiente.
+                </p>
+            </section>
+        </main>
+
+        <footer>
+            <p>
+               2025 ZoneTech. Este sitio web es libre para copiar, modificar y distribuir con fines no comerciales.
+            </p>
+        </footer>
+    </body>
+</html>

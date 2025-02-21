@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- archivo css-->
+        <link rel="stylesheet" href="../Styles/style.css" />
+        <title>Historia</title>
+    </head>
+    <body>
+        <header>
+            <nav class="navbar">
+                <a class="logo" href="../index.html">
+                    <img  src="../Assets/img/logo.png" alt="ZoneTech Logo" width="150" />
+                </a>
+                <ul>
+                    <li>
+                        <a href="../index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="../Pages/historia.html">Historia</a>
+                    </li>
+                    <li>
+                        <a href="../Pages/distribuciones.html">Distribuciones</a>
+                    </li>
+                    <li>
+                        <a href="../Pages/primerosPasos.html">Primeros pasos</a>
+                    </li>
+                    <li>
+                        <a href="../Pages/contacto.html">Contacto</a>
+                    </li>
+                    <li>
+                        <a class="icono" href="https://youtube.com"></a>
+                    </li>
+                    <li><a class="icono" href="https://github.com"></a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section class="titulo-parrafo">
+                <h1>🐧 Historia</h1>
+                <p>
+                    En los años 60, las computadoras eran gigantescas máquinas, y el desarrollo de software enfrentaba grandes limitaciones. Para programar cualquier aplicación, era necesario usar lenguaje ensamblador, un conjunto de instrucciones de bajo nivel específicas para cada procesador. Esto significaba que cada aplicación debía reescribirse desde cero para funcionar en una máquina diferente, haciendo el proceso extremadamente tedioso y poco práctico. 
+                </p>
+                <div class="imagen-derecha">
+                    <div>
+                        <p>
+                            En este contexto, surgió la necesidad de sistemas operativos que simplificaran la interacción entre el hardware y el software. Fue así como, en 1969, en los Laboratorios Bell de AT&T, los investigadores Ken Thompson, Dennis Ritchie y su equipo comenzaron a trabajar en un sistema operativo más eficiente. Su objetivo era superar las limitaciones de Multics, un proyecto previo que resultó ser complejo y difícil de manejar. De este esfuerzo nació Unix, desarrollado inicialmente en un equipo PDP-7 utilizando ensamblador. En 1970, el sistema recibió su nombre, "Unix", como un juego de palabras en contraste con la multifuncionalidad de Multics. Pero el verdadero avance llegó en 1973, cuando Dennis Ritchie creó el lenguaje de programación C.
+                        </p> 
+                        <p>
+                            Junto con Thompson, reescribieron Unix en C, lo que permitió que el sistema fuera portátil, es decir,que pudiera adaptarse a diferentes tipos de hardware sin tener que reescribirlo por completo. Esto convirtió a Unix en un sistema modular y flexible, ideal para su adopción en universidades, centros de investigación y empresas.
+                        </p>
+                    </div>
+                    <div class="centrar">
+                        <div class="imagen-wiki">
+                            <figure class="logo-C">
+                                <figcaption>Lenguaje C</figcaption>
+                                <img src="../Assets/img/C.png" alt="Lenguaje de programación C">
+                            </figure>
+
+                            <figure class="codigo">
+                                <img src="../Assets/img/Código_en_lenguaje_C.png" alt="">
+                                <figcaption>Código ejemplo</figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="titulo-parrafo">
+                <h2>Estructura de Unix</h2>
+                <p>Unix se compone de tres capas principales:</p>
+                <div class="lista-imagen">
+                    <ul>
+                        <li>
+                            El <strong>Kernel</strong>, que actúa como el núcleo del sistema, gestionando los recursos del hardware y ejecutando programas.
+                        </li>
+                        <li>
+                            El <strong>Shell</strong>, que es la interfaz mediante la cual los usuarios interactúan con el sistema. En aquella época, las interfaces gráficas no existían, y los comandos se introducían mediante texto.
+                        </li>
+                        <li>
+                            Las <strong>herramientas</strong>, pequeños programas diseñados para realizar tareas específicas y que podían combinarse en "pipelines" para resolver problemas más complejos.
+                        </li>
+                    </ul>
+                    <div class="imagen-wiki">
+                        <figure class="estructura-unix">
+                            <img class="imagenes" src="../Assets/img/unixarchi.jpg" alt="" />
+                            <figcaption>Estructura unix</figcaption>
+                        </figure>
+                    </div>
+                </div>
+                <p>
+                  El diseño eficiente y modular de Unix, junto con su portabilidad gracias al lenguaje C, lo convirtió en un estándar de facto en la informática académica y profesional de los años 70 y 80. Sin embargo, Unix no estaba disponible de manera gratuita ni abierta. Su comercialización y la proliferación de versiones propietarias llevaron a una fragmentación que dejó a muchos usuarios buscando alternativas libres.
+                </p>
+            </section>
+
+            <section class="titulo-parrafo">
+                <div class="imagen-derecha">
+                    <div>
+                        <h2>El nacimiento del proyecto GNU y Linux</h2>
+                        <p>
+                            En 1983, Richard Stallman lanzó el proyecto GNU (acrónimo de "GNU's Not Unix"), con el objetivo de crear un sistema operativo completo, libre y compatible con Unix. Stallman estaba motivado por los principios del software libre, que garantizan la libertad de usar, estudiar, modificar y compartir software. El proyecto GNU desarrolló herramientas esenciales, como compiladores, bibliotecas y utilidades, pero carecía de un elemento clave: el núcleo o kernel que uniera todos los componentes.
+                        </p>
+                    </div>
+
+                    <div class="centrar">
+                        <div class="imagen-wiki">
+                            <figure class="gnu">
+                                <img  src="../Assets/img/gnu-make.png" alt="Mascota GNU" />
+                                <figcaption>Mascota de GNU</figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+                
+                <p>
+                    Mientras tanto, en 1991, Linus Torvalds, un estudiante finlandés, comenzó a desarrollar un kernel como un proyecto personal para su computadora IBM PC. Inspirado por Unix, Torvalds creó Linux, un kernel que se destacó por su eficiencia y por ser de código abierto. Combinando Linux con las herramientas del proyecto GNU, nació lo que hoy conocemos como GNU/Linux, un sistema operativo completo, libre y accesible.
+                </p>
+
+                <div class="centrar">
+                    <div class="imagen-wiki">
+                        <figure class="tux">
+                            <img class="achicar-imagenes" src="../Assets/img/Linux_mascot_tux.png" alt="Mascota de Linux llamado 'Tux'"/>
+                            <figcaption>Mascota del kernel Linux</figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </section>
+
+            <section class="titulo-parrafo">
+                <h2 class="segundoTitulo">Impacto de Linux</h2>
+                <p class="parrafo">
+                  Desde su creación, GNU/Linux ha revolucionado el mundo de la informática. No solo se convirtió en la base de sistemas operativos para servidores y supercomputadoras, sino que también impulsó el desarrollo de tecnologías modernas como Android. Gracias a su modelo de código abierto, GNU/Linux sigue evolucionando a través de la colaboración global, manteniéndose fiel a los principios de libertad y accesibilidad que inspiraron su creación.
+                </p>
+            </section>
+        </main>
+        <footer>
+            <p>
+               2025 ZoneTech. Este sitio web es libre para copiar, modificar y distribuir con fines no comerciales.
+            </p>
+        </footer>
+    </body>
+</html>

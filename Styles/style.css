@@ -1,0 +1,382 @@
+@import url('https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Funnel Sans", serif;
+    color: #b8c0e0;
+    background-color: #24273a;
+}
+
+main{
+    padding-top: 60px;
+
+}
+
+/*--------------------------------------------------------------*/
+
+header{
+    background-color: #2a283d;
+}
+
+header .navbar{
+    background-color: #2a283d;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+    padding: 30px 0;
+}
+
+.navbar ul{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.navbar a{
+    color: #FFFFFF;
+    font-size: 18px;
+}
+
+.navbar a:hover{
+    color:#91d7e3;
+}
+
+.navbar .icono{
+    padding-right: 20px;
+    font-size: 25px;
+}
+
+/*--------------------------------------------------------------*/
+
+.titulo{
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: self-start;
+    justify-content: center;
+    height: 60vh;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("../Assets/img/linuxconfig.png");
+    background-size: cover;
+    background-position: center center;
+}
+
+.titulo h1, .titulo p{
+    width: 100%;
+    text-shadow: 1px 1px 5px #000000;
+    padding: 10px 20vw;
+}
+.titulo h1{
+    color: #8aadf4;
+    font-size: 50px;
+}
+.titulo p{
+    font-size: 40px;
+    font-weight: bold;
+}
+
+/*--------------------------------------------------------------*/
+
+.titulo-parrafo{
+    max-width: 1050px;
+    margin: auto;
+    padding: 14px;
+}
+
+.titulo-parrafo h1{
+    padding: 16px;
+    text-align: center;
+    font-size: 42px;
+}
+
+.titulo-parrafo h2{
+    font-size: 32px;
+    padding: 16px;
+    text-align: start;
+}
+
+.titulo-parrafo p{
+    padding-bottom: 16px;
+    font-size: 18px;
+}
+
+.titulo-parrafo li{
+    list-style: outside;
+    margin: 20px;
+    font-size: 18px;
+}
+
+/*--------------------------------------------------------------*/
+
+.cajas{
+    padding: 12px;
+    max-width: 1050px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.caja{
+    padding: 18px;
+    border: 2px solid #61568c;
+    border-radius: 10px;
+    background-color: #1e2030;
+}
+.caja h3{
+    font-size: 20px;
+    padding-bottom: 10px;
+    color: #FFFFFF;
+}
+
+.caja p{
+    font-size: 16px;
+}
+
+/*--------------------------------------------------------------*/
+
+.parrafo-imagen{
+    /* border: 1px solid #FFFFFF; */
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.parrafo-imagen h3{
+    text-align: start;
+}
+
+.parrafo-imagen h4{
+    font-size: 20px;
+}
+
+.imagen-wiki{
+    border: 2px solid #686aa0;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+    align-items: center;
+    width: 400px;
+}
+
+.logo-C{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+
+.codigo{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-bottom: 20px;
+}
+
+/*--------------------------------------------------------------*/
+
+.lista-imagen{
+    /* border: 1px solid #FFFFFF; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding-bottom: 20px;
+}
+.lista-imagen li{
+    list-style: inside;
+    padding: 12px;
+}
+
+.estructura-unix{
+    /* background-color: #000000; */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.estructura-unix img{
+    border-radius: 20px;
+}
+
+/*--------------------------------------------------------------*/
+.centrar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.gnu{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-bottom: 20px;
+}
+.gnu img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.tux{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-bottom: 20px;
+}
+
+.tux img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+/*--------------------------------------------------------------*/
+
+.titulo-imagen h1{
+    font-size: 42px;
+    text-align: center;
+    padding: 20px;
+}
+
+.titulo-imagen h2{
+    font-size: 36px;
+    padding: 24px;
+}
+
+.titulo-imagen p{
+    max-width: 1050px;
+    margin: auto;
+    padding: 14px;
+    padding-bottom: 16px;
+    font-size: 18px;
+}
+.titulo-imagen img{
+    width: 100%;
+}
+/*--------------------------------------------------------------*/
+
+.imagen-grande img{
+    width: 100%;
+}
+/*--------------------------------------------------------------*/
+footer{
+    border-top: 1px solid #6d6688;
+    padding: 20px;
+    margin-top: 20px;
+    text-align: center;
+}
+/*--------------------------------------------------------------*/
+
+@media (min-width: 850px){
+    header .navbar{
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 10px 0;
+        position: fixed;
+        height: 60px;
+        width: 100%;
+    }
+    .navbar ul{
+        flex-direction: row;
+        align-items: center;
+        gap: 20px;
+    }
+    .navbar .icono{
+        color: #959595;
+    }
+    .navbar .logo{
+        padding-left: 20px;
+    }
+
+    .titulo{
+        padding: 30px 0;
+    }
+    
+    .cajas{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .cajas p{
+        font-size: 18px;
+    }
+
+    .titulo-parrafo p{
+        font-size: 22px;
+    }
+
+    .titulo-parrafo h2{
+        padding: 0;
+        padding-bottom: 16px;
+    }
+
+    .titulo-parrafo h3{
+        padding: 16px;
+        font-size: 24px;
+    }
+
+    .titulo-parrafo li{
+        font-size: 20px;
+    }
+
+    .imagen-derecha{
+        display: flex;
+        gap: 40px;
+    }
+
+    .lista-imagen{
+        flex-direction: row;
+    }
+
+    .lista-imagen li{
+        font-size: 20px;
+        margin: 10px;
+    }
+
+    .titulo-imagen img{
+        width: 80%;
+    }
+    .titulo-imagen figure{
+        display: flex;
+        justify-content: center;
+    }
+    .titulo-imagen img{
+        border-radius: 10px;
+    }
+    .titulo-imagen p{
+        font-size: 22px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
