@@ -283,14 +283,23 @@ footer{
 }
 /*--------------------------------------------------------------*/
 
+.contenedor{
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
 @media (min-width: 850px){
     header .navbar{
         flex-direction: row;
         justify-content: space-between;
         padding: 10px 0;
-        position: fixed;
         height: 60px;
         width: 100%;
+        position: fixed;
+        z-index: 1;
     }
     .navbar ul{
         flex-direction: row;
@@ -362,6 +371,18 @@ footer{
     }
     .titulo-imagen p{
         font-size: 22px;
+    }
+    .contenedor{
+        height: 65vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+    .contenedor img{
+        max-width: 80%;
+        max-height: 80%;
+        margin: auto;
     }
 
 }
