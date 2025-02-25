@@ -299,6 +299,62 @@ footer{
 }
 /*--------------------------------------------------------------*/
 
+.contacto-container {
+    max-width: 500px;
+    background: #313244;
+    padding: 30px;
+    border-radius: 10px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.contacto-container h1 {
+    color: #89b4fa;
+    font-size: 2rem;
+}
+
+.contacto-container p {
+    margin-bottom: 20px;
+}
+
+.contacto-container label {
+    display: block;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.contacto-container input,
+.contacto-container textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: none;
+    background: #45475a;
+    color: #cdd6f4;
+}
+
+.contacto-container textarea {
+    height: 120px;
+    resize: none;
+}
+
+.contacto-container button {
+    background: #89b4fa;
+    color: #1e1e2e;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background 0.3s;
+}
+
+.contacto-container button:hover {
+    background: #74c7ec;
+}
 .contenedor{
     height: 400px;
     display: flex;
@@ -306,6 +362,8 @@ footer{
     align-items: center;
     overflow: hidden;
 }
+
+/*--------------------------------------------------------------*/
 
 @media (min-width: 850px){
     .navbar{
