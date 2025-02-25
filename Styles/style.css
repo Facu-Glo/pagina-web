@@ -14,44 +14,61 @@ body {
     background-color: #24273a;
 }
 
-main{
-    padding-top: 60px;
-
-}
-
 /*--------------------------------------------------------------*/
 
 header{
     background-color: #2a283d;
+    height: 80px;
 }
 
-header .navbar{
-    background-color: #2a283d;
+.navbar{
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
-    text-align: center;
-    gap: 30px;
-    padding: 30px 0;
+    height: 100%;
+    flex-wrap: wrap;
+    position: relative;
+    padding: 0 2rem;
+}
+.check{
+    display: none;
+}
+.checkbtn{
+    cursor: pointer;
+}
+.checkbtn svg{
+    margin-top: 10px;
+}
+.check:checked + .lista-ul{
+    height: calc(100vh - 80px);
+}
+.logo img{
+    width: 140px;
 }
 
-.navbar ul{
+.lista-ul{
+    background-color: #2a283d;
+    width: 100%;
+    position: absolute;
+    top: 80px;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    justify-content: center;
+    height: 0;
+    left: 0;
+    overflow: hidden;
+    align-items: center;
+    transition: all .3s;
 }
-.navbar a{
+.lista-ul a{
+    font-size: 3rem;
     color: #FFFFFF;
-    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
 }
 
-.navbar a:hover{
-    color:#91d7e3;
-}
-
-.navbar .icono{
-    padding-right: 20px;
-    font-size: 25px;
+.lista-ul a:hover{
+    color: #91d7e3;
 }
 
 /*--------------------------------------------------------------*/
@@ -191,7 +208,6 @@ header .navbar{
 /*--------------------------------------------------------------*/
 
 .lista-imagen{
-    /* border: 1px solid #FFFFFF; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -292,25 +308,36 @@ footer{
 }
 
 @media (min-width: 850px){
-    header .navbar{
+    .navbar{
+        background-color: #2a283d;
         flex-direction: row;
         justify-content: space-between;
-        padding: 10px 0;
-        height: 60px;
+        /* padding: 10px 0; */
+        height: 80px;
         width: 100%;
         position: fixed;
         z-index: 1;
     }
-    .navbar ul{
+    .checkbtn{
+        display: none;
+    }
+    .lista-ul{
         flex-direction: row;
         align-items: center;
+        position: static;
+        width: auto;
+        height: auto;
         gap: 20px;
+        margin: 0;
+    }
+    .lista-ul a{
+        font-size: 18px;
+        margin-top: 0;
     }
     .navbar .icono{
         color: #959595;
-    }
-    .navbar .logo{
-        padding-left: 20px;
+        padding-right: 20px;
+        font-size: 25px;
     }
 
     .titulo{
