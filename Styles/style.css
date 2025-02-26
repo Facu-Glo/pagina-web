@@ -392,12 +392,18 @@ footer{
         font-size: 18px;
         margin-top: 0;
     }
-    .navbar .icono{
+    /* .navbar .icono{
         color: #959595;
         padding-right: 20px;
         font-size: 25px;
-    }
+    } */
 
+    .icono{
+        fill: grey;
+    }
+    .icono:hover {
+        fill: #91d7e3;
+    }
     .titulo{
         padding: 30px 0;
     }
