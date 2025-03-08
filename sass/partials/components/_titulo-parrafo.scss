@@ -1,0 +1,58 @@
+.titulo-parrafo{
+  max-width: 1050px;
+  margin: auto;
+  padding: 14px;
+
+  h1{
+    padding: 16px;
+    text-align: center;
+    font-size: 42px;
+  }
+  h2{
+    font-size: 32px;
+    padding: 16px;
+    text-align: start;
+  }
+  h3{
+    padding: 16px;
+    font-size: 24px;
+  }
+  p{
+    padding-bottom: 16px;
+    font-size: 18px;
+  }
+  li{
+    list-style: outside;
+    margin: 20px;
+    font-size: 20px;
+  }
+
+  .centrar {
+    @include flex(flex-start, column, center, nowrap);
+    padding-bottom: 20px;
+
+    .imagen-wiki{
+      @include flex(flex-start, column, center, nowrap);
+      text-align: center;
+      border: 2px solid #686aa0;
+      border-radius: 10px;
+      gap: 20px;
+      width: 400px;
+
+      figure{
+        @include flex(flex-start, column, stretch, nowrap);
+        gap: 20px;
+        width: 100%;
+
+        img{
+          border-radius: 10px;
+          
+        }
+      }
+
+      .logo-C{
+        width: 50%;
+      }
+    }
+  }
+}

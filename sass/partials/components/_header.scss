@@ -1,0 +1,66 @@
+header{
+    background-color: #2a283d;
+    height: 80px;
+}
+
+.navbar{
+  @include flex(space-between, row, center, wrap);
+  height: 100%;
+  position: relative;
+  padding: 0 2rem;
+
+  input{
+    display: none;
+
+    &:checked + ul{
+      height: calc(100vh - 80px);
+    }
+  }
+
+  label{
+    cursor: pointer;
+
+    svg{
+      margin-top: 10px;
+    }
+  }
+
+  a{
+    img{
+      width: 140px;
+    }
+  }
+
+  ul{
+    @include flex(center, column, center, nowrap);
+    background-color: $secondary-color;
+    position: absolute;
+    width: 100%;
+    top: 80px;
+    left: 0;
+    height: 0;
+    overflow: hidden;
+    transition: all 0.3s;
+
+    a{
+      color: $blanco;
+      font-size: 3rem;
+      font-weight: bold;
+      text-decoration: none;
+
+      svg{
+        fill: grey;
+
+        &:hover{
+          fill: $accent-color;
+        }
+      }
+
+
+      &:hover{
+        color: $accent-color;
+      }
+    }
+  }
+}
+
