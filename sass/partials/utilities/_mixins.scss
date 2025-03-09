@@ -5,3 +5,20 @@
   align-items: $align-items;
   flex-wrap: $wrap;
 }
+
+@mixin button-styles($bg-color, $hover-color, $text-color) {
+  background: $bg-color;
+  color: $text-color;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background 0.3s;
+
+  &:hover {
+    background: $hover-color;
+  }
+}

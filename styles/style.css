@@ -74,6 +74,16 @@ header {
   color: #91d7e3;
 }
 
+footer {
+  border-top: 1px solid #6d6688;
+  padding: 20px;
+  margin-top: 20px;
+  text-align: center;
+}
+footer p svg {
+  fill: #b8c0e0;
+}
+
 .titulo p, .titulo h1 {
   width: 100%;
   text-shadow: 1px 1px 5px #000000;
@@ -189,6 +199,80 @@ header {
 }
 .cajas article p {
   font-size: 16px;
+}
+
+.imagen-grande img {
+  width: 100%;
+}
+
+.titulo-imagen h1 {
+  font-size: 42px;
+  text-align: center;
+  padding: 20px;
+}
+.titulo-imagen h2 {
+  font-size: 36px;
+  padding: 24px;
+}
+.titulo-imagen p {
+  max-width: 1050px;
+  margin: auto;
+  padding: 14px;
+  padding-bottom: 16px;
+  font-size: 18px;
+}
+.titulo-imagen img {
+  width: 100%;
+}
+
+.contacto-container textarea, .contacto-container input {
+  background: #45475a;
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 5px;
+  border: none;
+  color: #cdd6f4;
+}
+
+.contacto-container {
+  background: #313244;
+  max-width: 500px;
+  padding: 30px;
+  border-radius: 10px;
+  margin: 50px auto;
+  text-align: center;
+}
+.contacto-container h1 {
+  color: #89b4fa;
+  font-size: 2rem;
+}
+.contacto-container p {
+  margin-bottom: 20px;
+}
+.contacto-container label {
+  display: block;
+  font-weight: bold;
+  margin-top: 15px;
+}
+.contacto-container textarea {
+  height: 120px;
+  resize: none;
+}
+.contacto-container button {
+  background: #89b4fa;
+  color: #1e1e2e;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: background 0.3s;
+}
+.contacto-container button:hover {
+  background: #74c7ec;
 }
 
 /*# sourceMappingURL=style.css.map */

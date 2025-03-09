@@ -1,0 +1,48 @@
+%input-styles {
+  background: #45475a;
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 5px;
+  border: none;
+  color: #cdd6f4;
+}
+
+.contacto-container{
+  background: #313244;
+  max-width: 500px;
+  padding: 30px;
+  border-radius: 10px;
+  margin: 50px auto;
+  text-align: center;
+
+  h1{
+    color: #89b4fa;
+    font-size: 2rem;
+  }
+
+  p{
+    margin-bottom: 20px;
+  }
+
+  label{
+    display: block;
+    font-weight: bold;
+    margin-top: 15px;
+  }
+
+  input{
+    @extend %input-styles;
+  }
+
+  textarea{
+    @extend %input-styles;
+    height: 120px;
+    resize: none;
+  }
+
+  button{
+    @include button-styles(#89b4fa, #74c7ec, #1e1e2e);
+  }
+}
+
