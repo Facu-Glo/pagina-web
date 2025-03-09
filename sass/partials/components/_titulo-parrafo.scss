@@ -1,7 +1,5 @@
 .titulo-parrafo{
-  max-width: 1050px;
-  margin: auto;
-  padding: 14px;
+  @include espacio(100%, 14px, auto, 1050px);
 
   h1{
     padding: 16px;

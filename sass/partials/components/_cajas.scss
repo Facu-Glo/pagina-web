@@ -1,15 +1,13 @@
 .cajas{
   @include flex(flex-start, column, stretch, nowrap);
-  padding: 12px;
-  max-width: 1050px;
-  margin: auto;
+  @include espacio(100%, 12px, auto, 1050px);
   gap: 20px;
 
   article{
-    padding: 18px;
+    background-color: $fondocaja;
     border: 2px solid $bordecaja;
     border-radius: 10px;
-    background-color: $fondocaja;
+    padding: 18px;
 
     h3{
       font-size: 20px;

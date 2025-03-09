@@ -112,9 +112,10 @@ footer p svg {
 }
 
 .titulo-parrafo {
-  max-width: 1050px;
-  margin: auto;
+  width: 100%;
   padding: 14px;
+  margin: auto;
+  max-width: 1050px;
 }
 .titulo-parrafo h1 {
   padding: 16px;
@@ -181,16 +182,17 @@ footer p svg {
   justify-content: flex-start;
   align-items: stretch;
   flex-wrap: nowrap;
+  width: 100%;
   padding: 12px;
-  max-width: 1050px;
   margin: auto;
+  max-width: 1050px;
   gap: 20px;
 }
 .cajas article {
-  padding: 18px;
+  background-color: #1e2030;
   border: 2px solid #61568c;
   border-radius: 10px;
-  background-color: #1e2030;
+  padding: 18px;
 }
 .cajas article h3 {
   font-size: 20px;
@@ -208,16 +210,23 @@ footer p svg {
 .titulo-imagen h1 {
   font-size: 42px;
   text-align: center;
+  width: 100%;
   padding: 20px;
+  margin: 0;
+  max-width: none;
 }
 .titulo-imagen h2 {
   font-size: 36px;
+  width: 100%;
   padding: 24px;
+  margin: 0;
+  max-width: none;
 }
 .titulo-imagen p {
-  max-width: 1050px;
-  margin: auto;
+  width: 100%;
   padding: 14px;
+  margin: auto;
+  max-width: 1050px;
   padding-bottom: 16px;
   font-size: 18px;
 }
@@ -227,20 +236,21 @@ footer p svg {
 
 .contacto-container textarea, .contacto-container input {
   background: #45475a;
-  width: 100%;
   padding: 10px;
+  width: 100%;
   margin-top: 5px;
-  border-radius: 5px;
+  border-radius: 10px;
   border: none;
   color: #cdd6f4;
 }
 
 .contacto-container {
   background: #313244;
-  max-width: 500px;
+  width: 100%;
   padding: 30px;
-  border-radius: 10px;
   margin: 50px auto;
+  max-width: 500px;
+  border-radius: 10px;
   text-align: center;
 }
 .contacto-container h1 {

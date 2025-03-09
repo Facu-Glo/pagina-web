@@ -22,3 +22,10 @@
     background: $hover-color;
   }
 }
+
+@mixin espacio($width, $padding, $margin, $max-width) {
+  width: $width;
+  padding: $padding;
+  margin: $margin;
+  max-width: $max-width;
+}
