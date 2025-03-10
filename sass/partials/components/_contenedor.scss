@@ -1,0 +1,5 @@
+.contenedor{
+  @include flex(center, column, center, nowrap);
+  height: 400px;
+  overflow: hidden;
+}
