@@ -1,12 +1,12 @@
 footer{
-  border-top: 1px solid #6d6688;
+  border-top: 1px solid $gris;
   padding: 20px;
   margin-top: 20px;
   text-align: center;
 
   p{
     svg{
-      fill: #b8c0e0;
+      fill: $primary-color;
     }
   }
 }

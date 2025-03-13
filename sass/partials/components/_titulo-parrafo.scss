@@ -32,7 +32,7 @@
     .imagen-wiki{
       @include flex(flex-start, column, center, nowrap);
       text-align: center;
-      border: 2px solid #686aa0;
+      border: 2px solid $bordecaja;
       border-radius: 10px;
       gap: 20px;
       width: 400px;

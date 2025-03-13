@@ -92,7 +92,11 @@
                     <p>Lista el contenido de un directorio, mostrando todos los archivos y subdirectorios contenidos en su interior.</p>
                     <p>Sin opciones o argumentos, ls mostrará el contenido del directorio de trabajo actual. Puedes pasar un nombre de ruta para listar archivos y carpetas en esa ubicación en su lugar.</p>
                     <p><strong>Sintaxis</strong></p>
-                    <code>ls [opciones] [directorio]</code>
+
+                    <pre>
+                        <code>ls [opciones] [directorio]</code>
+                    </pre>
+
                     <p>Las opciones pueden ser:</p>
 
                     <ul>
@@ -120,7 +124,11 @@
                       El comando mkdir te permite crear una nueva carpeta. Simplemente, específicas el nombre del directorio a crear.
                     </p>
                     <p><strong>Sintaxis</strong></p> 
-                    <code>mkdir [opción] [directorio]</code>
+
+                    <pre>
+                        <code>mkdir [opción] [directorio]</code>
+                    </pre>
+
                     <p>Algunas opciones útiles de mkdir:</p>
 
                     <ul>
@@ -133,7 +141,11 @@
                       El comando cp copia archivos o directorios de una ubicación a otra. Requiere pasar una ruta de origen y un destino.
                     </p>
                     <p><strong>Sintaxis</strong></p>
-                    <code>cp [opciones] [origen] [destino]</code>
+
+                    <pre>
+                        <code>cp [opciones] [origen] [destino]</code>
+                    </pre>
+
                     <p>Opciones útiles:</p>
 
                     <ul>
@@ -150,14 +162,21 @@
                       También puedes usar el comando mv para renombrar archivos, ya que solo necesitas cambiar las rutas de origen y destino al antiguo y nuevo nombre.
                     </p>
                     <p><strong>Sintaxis</strong></p>
-                    <code>mv [opciones] [origen] [destino]</code>
+
+                    <pre>
+                        <code>mv [opciones] [origen] [destino]</code>
+                    </pre>
 
                     <li><strong>rm</strong> - Eliminar archivos y directorios</li>
                     <p>
                       El comando rm elimina archivos y directorios. Úsalo con precaución porque los archivos y directorios eliminados no se pueden recuperar.
                     </p>
                     <p><strong>Sintaxis</strong></p>
-                    <code>rm [opciones] [nombre]</code>
+
+                    <pre>
+                        <code>rm [opciones] [nombre]</code>
+                    </pre>
+
                     <p>Opciones útiles</p>
 
                     <ul>
@@ -175,7 +194,11 @@
                       El comando touch se utiliza para crear instantáneamente un nuevo archivo vacío. Esto es útil cuando necesitas un archivo vacío para llenarlo con datos más tarde.
                     </p>
                     <p><strong>Sintaxis</strong></p>
-                    <code>touch [opciones] [nombredearchivo]</code>
+
+                    <<pre>
+                        <code>touch [opciones] [nombredearchivo]</code>
+                    </pre>
+
                     <p>Opciones</p>
 
                     <ul>
@@ -188,18 +211,34 @@
                       Se utiliza para mostrar el contenido de un archivo, concatenar múltiples archivos o crear nuevos archivos. Es uno de los comandos más básicos y útiles cuando se trabaja con la línea de comandos.
                     </p>
                     <p><strong>Sintaxis</strong></p>
-                    <code>cat [opciones] [archivo(s)]</code>
+
+                    <pre>
+                        <code>cat [opciones] [archivo(s)]</code>.
+                    </pre>
+
                     <p><strong>Funciones:</strong></p>
                     <p>Mostrar el contenido de un archivo</p>
-                    <code>cat archivo.txt</code>
+
+                    <pre>
+                        <code>cat archivo.txt</code>
+                    </pre>
+
                     <p>
                       Concatenar múltiples archivos: Muestra el contenido de varios archivos uno después de otro. Esto es útil para ver el contenido de varios archivos sin abrir cada uno por separado.
                     </p>
-                    <code>cat archivo1.txt archivo2.txt</code>
+
+                    <pre>
+                        <code>cat archivo1.txt archivo2.txt</code>
+                    </pre>
+
                     <p>
                       Crear un nuevo archivo: Puedes crear un archivo y escribir contenido en él desde la terminal. Usa Ctrl+D para finalizar la entrada.
                     </p> 
-                    <code>cat > nuevoarchivo.txt</code>
+
+                    <pre>
+                        <code>cat > nuevoarchivo.txt</code>
+                    </pre>
+
                     <p>Opciones</p>
 
                     <ul>
@@ -260,17 +299,13 @@
                     En la mayoría de las distribuciones de Linux, puedes instalar aplicaciones desde la terminal utilizando el comando <code>sudo</code>, seguido del gestor de paquetes específico de tu distribución, una instrucción como <code>install</code>, y el nombre del paquete que deseas instalar. Por ejemplo:
                 </p>
                 <pre>
-                    <code>
-                        sudo [gestor-de-paquetes] [instrucción] [nombre-del-paquete]
-                    </code>
+                    <code>sudo [gestor-de-paquetes] [instrucción] [nombre-del-paquete]</code>
                 </pre>
                 <p>
                     Por ejemplo, en <strong>Ubuntu</strong>, el gestor de paquetes es <code>apt</code>, así que para instalar el navegador Firefox:
                 </p>
                 <pre>
-                    <code>
-                        sudo apt install firefox
-                    </code>
+                    <code>sudo apt install firefox</code>
                 </pre>
                 <p>
                     Las instrucciones básicas que se utilizan comúnmente con los gestores de paquetes son:

@@ -152,7 +152,7 @@ footer p svg {
   align-items: center;
   flex-wrap: nowrap;
   text-align: center;
-  border: 2px solid #686aa0;
+  border: 2px solid #61568c;
   border-radius: 10px;
   gap: 20px;
   width: 400px;
@@ -214,6 +214,7 @@ footer p svg {
 }
 .titulo-imagen h2 {
   font-size: 36px;
+  text-align: center;
   width: 100%;
   padding: 24px;
   margin: 0;
@@ -229,6 +230,24 @@ footer p svg {
 }
 .titulo-imagen img {
   width: 100%;
+}
+
+pre {
+  background-color: #1e1e2e;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: self-start;
+  flex-wrap: nowrap;
+  color: #FFFFFF;
+  height: 50px;
+  border-radius: 5px;
+  padding: 10px 20px;
+  overflow-x: auto;
+  white-space: pre;
+}
+pre code {
+  font-size: 16px;
 }
 
 .contacto-container textarea, .contacto-container input {
@@ -251,7 +270,7 @@ footer p svg {
   text-align: center;
 }
 .contacto-container h1 {
-  color: #89b4fa;
+  color: #8aadf4;
   font-size: 2rem;
 }
 .contacto-container p {
@@ -267,8 +286,8 @@ footer p svg {
   resize: none;
 }
 .contacto-container button {
-  background: #89b4fa;
-  color: #1e1e2e;
+  background: #8aadf4;
+  color: #000000;
   font-size: 1rem;
   font-weight: bold;
   padding: 10px 20px;
@@ -279,7 +298,7 @@ footer p svg {
   transition: background 0.3s;
 }
 .contacto-container button:hover {
-  background: #74c7ec;
+  background: #91d7e3;
 }
 
 .contenedor {
@@ -325,6 +344,13 @@ footer p svg {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
+  }
+  .cajas article {
+    transition: transform 0.3s ease-in-out, border-color 0.3s ease-in-out;
+  }
+  .cajas article:hover {
+    transform: scale(1.1);
+    border-color: #799cff;
   }
   .cajas article p {
     font-size: 18px;

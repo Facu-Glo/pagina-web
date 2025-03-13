@@ -1,21 +1,21 @@
 %input-styles {
-  background: #45475a;
+  background: $fondocampo;
   padding: 10px;
   width: 100%;
   margin-top: 5px;
   border-radius: 10px;
   border: none;
-  color: #cdd6f4;
+  color: $colorfontcontacto;
 }
 
 .contacto-container{
-  background: #313244;
+  background: $fondocontacto;
   @include espacio(100%, 30px, 50px auto, 500px);
   border-radius: 10px;
   text-align: center;
 
   h1{
-    color: #89b4fa;
+    color: $celeste;
     font-size: 2rem;
   }
 
@@ -40,7 +40,7 @@
   }
 
   button{
-    @include button-styles(#89b4fa, #74c7ec, #1e1e2e);
+    @include button-styles($celeste, $accent-color, $negro);
   }
 }
 

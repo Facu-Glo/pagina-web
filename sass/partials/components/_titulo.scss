@@ -1,6 +1,6 @@
 %texto-titulos{
   width: 100%;
-  text-shadow: 1px 1px 5px #000000;
+  text-shadow: 1px 1px 5px $negro;
   padding: 10px 20vw;
 }
 
@@ -16,7 +16,7 @@
 
   h1{
   @extend %texto-titulos;
-  color: $titulo;
+  color: $celeste;
   font-size: 50px;
   }
 
