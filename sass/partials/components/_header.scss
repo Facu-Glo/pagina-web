@@ -1,5 +1,5 @@
 header{
-  background-color: $secondary-color;
+  background-color: map-get($colores, "secundario");
   width: 100%;
   position: fixed;
   top: 0;
@@ -32,7 +32,7 @@ header{
 
     ul{
       @include flex(center, column, center, nowrap);
-      background-color: $secondary-color;
+      background-color: map-get($colores, "secundario");
       position: absolute;
       width: 100%;
       top: 80px;
@@ -42,7 +42,7 @@ header{
       transition: all 0.3s;
 
       a{
-        color: $blanco;
+        color: map-get($colores, "blanco" );
         font-size: 3rem;
         font-weight: bold;
         text-decoration: none;
@@ -51,13 +51,13 @@ header{
           fill: grey;
 
           &:hover{
-            fill: $accent-color;
+            fill: map-get($colores, "cyan" );
           }
         }
 
 
         &:hover{
-          color: $accent-color;
+          color: map-get($colores, "cyan" );
           text-decoration: none;
         }
       }

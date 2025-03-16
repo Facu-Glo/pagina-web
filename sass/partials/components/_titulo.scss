@@ -1,6 +1,6 @@
 %texto-titulos{
   width: 100%;
-  text-shadow: 1px 1px 5px $negro;
+  text-shadow: 1px 1px 5px map-get($colores, "negro" );
   padding: 10px 20vw;
 }
 
@@ -16,7 +16,7 @@
 
   h1{
   @extend %texto-titulos;
-  color: $celeste;
+  color: map-get($colores, "celeste");
   font-size: 50px;
   }
 

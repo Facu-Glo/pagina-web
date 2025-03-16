@@ -1,17 +1,41 @@
-
-pre {
-  background-color: $codigocolor;
-  @include flex(center, row, self-start, nowrap);
-  color: $blanco;
-  height: 50px;
-  border-radius: 5px;
-  padding: 10px 20px;
-  overflow-x: auto;
-  white-space: pre;
-
-  code{
-    font-size: 16px;
-  }
+code {
+  color: map-get($colores, "blanco");
 }
 
+.codigo {
+  background-color: map-get($fondos, "codigo");
+  @include flex(flex-start, column, stretch, nowrap);
+  border-radius: 5px;
+  padding: 0;
+  position: relative;
+
+  .boton-codigo {
+    @include flex(flex-end, row, stretch, nowrap);
+    border-bottom: solid 0.5px map-get($colores, "gris");
+
+    button {
+      background-color: map-get($colores, "celeste");
+      border: none;
+      padding: 5px 10px;
+      font-size: 14px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  }
+
+  .comando {
+    @include flex(start, row, stretch, nowrap);
+    padding: 20px 30px;
+
+    code {
+      color: map-get($colores, "blanco");
+      font-size: 16px;
+
+
+      span {
+        color: map-get($colores, "celeste");
+      }
+    }
+  }
+}
 

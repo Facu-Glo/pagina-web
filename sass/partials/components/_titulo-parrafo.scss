@@ -32,7 +32,7 @@
     .imagen-wiki{
       @include flex(flex-start, column, center, nowrap);
       text-align: center;
-      border: 2px solid $bordecaja;
+      border: 2px solid map-get($bordes, "caja");
       border-radius: 10px;
       gap: 20px;
       width: 400px;

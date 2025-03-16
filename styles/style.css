@@ -232,22 +232,51 @@ footer p svg {
   width: 100%;
 }
 
-pre {
+code {
+  color: #FFFFFF;
+}
+
+.codigo {
   background-color: #1e1e2e;
   display: flex;
-  justify-content: center;
-  flex-direction: row;
-  align-items: self-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: stretch;
   flex-wrap: nowrap;
-  color: #FFFFFF;
-  height: 50px;
   border-radius: 5px;
-  padding: 10px 20px;
-  overflow-x: auto;
-  white-space: pre;
+  padding: 0;
+  position: relative;
 }
-pre code {
+.codigo .boton-codigo {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row;
+  align-items: stretch;
+  flex-wrap: nowrap;
+  border-bottom: solid 0.5px #6d6688;
+}
+.codigo .boton-codigo button {
+  background-color: #8aadf4;
+  border: none;
+  padding: 5px 10px;
+  font-size: 14px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.codigo .comando {
+  display: flex;
+  justify-content: start;
+  flex-direction: row;
+  align-items: stretch;
+  flex-wrap: nowrap;
+  padding: 20px 30px;
+}
+.codigo .comando code {
+  color: #FFFFFF;
   font-size: 16px;
+}
+.codigo .comando code span {
+  color: #8aadf4;
 }
 
 .contacto-container textarea, .contacto-container input {

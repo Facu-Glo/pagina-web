@@ -1,12 +1,12 @@
 footer{
-  border-top: 1px solid $gris;
+  border-top: 1px solid map-get($colores, "gris");
   padding: 20px;
   margin-top: 20px;
   text-align: center;
 
   p{
     svg{
-      fill: $primary-color;
+      fill: map-get($colores, "primario");
     }
   }
 }

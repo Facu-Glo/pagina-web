@@ -1,21 +1,21 @@
 %input-styles {
-  background: $fondocampo;
+  background: map-get($fondos, "campo");
   padding: 10px;
   width: 100%;
   margin-top: 5px;
   border-radius: 10px;
   border: none;
-  color: $colorfontcontacto;
+  color: map-get($tipografia, "contacto");
 }
 
 .contacto-container{
-  background: $fondocontacto;
+  background: map-get($fondos, "contacto");
   @include espacio(100%, 30px, 50px auto, 500px);
   border-radius: 10px;
   text-align: center;
 
   h1{
-    color: $celeste;
+    color: map-get($colores, "celeste");
     font-size: 2rem;
   }
 
@@ -40,7 +40,7 @@
   }
 
   button{
-    @include button-styles($celeste, $accent-color, $negro);
+    @include button-styles(map-get($colores, "celeste"), map-get($colores, "cyan"), map-get($colores, "negro"));
   }
 }
 
