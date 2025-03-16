@@ -10,6 +10,8 @@
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
         />
+        <!-- aos -->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         <!-- archivo css-->
         <link rel="stylesheet" href="../styles/style.css" />
         <title>Primeros pasos</title>
@@ -17,7 +19,7 @@
     <body>
         <header>
             <nav class="navbar">
-                <a class="logo" href="../index.html">
+                <a class="logo animate__animated animate__bounce" href="../index.html">
                     <img  src="../assets/img/logo.png" alt="ZoneTech Logo"/>
                 </a>
                 <label for="check" class="checkbtn">
@@ -62,14 +64,14 @@
         </header>
 
         <main>
-            <section class="titulo-parrafo">
+            <section data-aos="fade-left" class="titulo-parrafo">
                 <h1>Primeros pasos</h1>
                 <p>
                     Linux es un sistema operativo que, al igual que otros sistemas como Windows o macOS, se puede utilizar sin necesidad de interactuar directamente con la terminal. Muchas aplicaciones gráficas están disponibles, y la mayoría de las tareas cotidianas se pueden realizar usando interfaces gráficas, como el explorador de archivos o programas específicos.
                 </p>
             </section>
 
-            <section class="titulo-imagen">
+            <section data-aos="fade-right" class="titulo-imagen">
                 <h2>¿Qué es la terminal?</h2>
                 <figure>
                     <img src="../assets/img/linux-penguin-terminal.png" alt="">
@@ -79,7 +81,7 @@
                 </p>
             </section>
 
-            <section class="titulo-parrafo">
+            <section data-aos="fade-left" class="titulo-parrafo">
                 <h2>Linea de comandos</h2>
                 <p>
                   Los comandos de Linux te permiten controlar tu sistema desde la interfaz de línea de comandos (CLI) en lugar de utilizar tu ratón o trackpad. Son instrucciones de texto introducidas en el terminal para indicarle a tu sistema exactamente qué hacer.
@@ -89,7 +91,7 @@
                 </p>
             </section>
 
-            <section class="titulo-parrafo">
+            <section data-aos="fade-right" class="titulo-parrafo">
                 <h3>Comandos Básicos de Linux</h3>
                 <ul>
                     <li><strong>ls</strong> - Listar contenido del directorio:</li>
@@ -302,7 +304,7 @@
                 </ul>
             </section>
 
-            <section class="titulo-parrafo">
+            <section data-aos="fade-left" class="titulo-parrafo">
                 <h1>Lo importante de un sistema: las aplicaciones</h1>
                 <figure class="imagen-grande">
                     <img src="../assets/img/apps.png" alt="">
@@ -315,13 +317,13 @@
                 </p>
             </section>
 
-            <section class="titulo-parrafo">
+            <section data-aos="fade-right" class="titulo-parrafo">
                 <h2>¿Qué es un gestor de paquetes?</h2>
                 <p>
                     Un gestor de paquetes es una herramienta que facilita la instalación, actualización, configuración y eliminación de aplicaciones en tu sistema. En lugar de descargar programas desde sitios web como en otros sistemas operativos, en Linux utilizamos gestores de paquetes para acceder a repositorios oficiales, que son colecciones seguras y organizadas de software. Esto no solo te ahorra tiempo, sino que garantiza que el software sea confiable y esté optimizado para tu sistema.
                 </p>
             </section>
-            <section class="titulo-parrafo">
+            <section data-aos="fade-left" class="titulo-parrafo">
                 <h3>Mi recomendación personal</h3>
                 <p>
                     En mi experiencia, instalar aplicaciones desde la terminal usando un gestor de paquetes es rápido, limpio y eficiente. Prefiero este método porque me da más control y me asegura que siempre estoy obteniendo versiones actualizadas directamente desde los repositorios oficiales. Además, no necesitas depender de tiendas de aplicaciones gráficas que pueden ser más lentas o complicadas.
@@ -347,7 +349,7 @@
                 <p>Aunque los comandos cambian de un gestor a otro, la idea básica es la misma: instalar, actualizar y eliminar aplicaciones de manera sencilla y confiable.</p>
             </section>
 
-            <section class="titulo-parrafo">
+            <section data-aos="fade-right" class="titulo-parrafo">
                 <h2>Instalacion de aplicaciones</h2>
                 <p>
                     En la mayoría de las distribuciones de Linux, puedes instalar aplicaciones desde la terminal utilizando el comando <code>sudo</code>, seguido del gestor de paquetes específico de tu distribución, una instrucción como <code>install</code>, y el nombre del paquete que deseas instalar.
@@ -437,7 +439,7 @@
                 </p>
             </section>
             
-            <section class="titulo-parrafo">
+            <section data-aos="fade-left" class="titulo-parrafo">
                 <p>
                   Dominar los comandos básicos de Linux es fundamental para quienes desean aprovechar al máximo este sistema operativo. Aunque las interfaces gráficas son útiles, trabajar con la terminal ofrece un control más preciso y rápido sobre el sistema, facilitando tareas de administración, automatización y personalización. Los comandos mencionados son solo el principio, y con el tiempo descubrirás muchos otros que te permitirán realizar tareas aún más complejas.
                 </p>
@@ -457,5 +459,10 @@
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <!-- aos -->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+        AOS.init();
+        </script>
     </body>
 </html>

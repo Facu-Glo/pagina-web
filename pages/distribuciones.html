@@ -3,15 +3,23 @@
     <head>
         <meta charset="UTF-8" >
         <meta name="viewport" content="width=device-width, initial-scale=1.0" >
-        <!-- archivo css-->
+        <!-- bootstrap -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <!-- animate.css -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+        />
+        <!-- aos -->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <!-- archivo css-->
         <link rel="stylesheet" href="../styles/style.css" >
         <title>Distribuciones</title>
     </head>
     <body>
         <header>
             <nav class="navbar">
-                <a class="logo" href="../index.html">
+                <a class="logo animate__animated animate__bounce" href="../index.html">
                     <img  src="../assets/img/logo.png" alt="ZoneTech Logo"/>
                 </a>
                 <label for="check" class="checkbtn">
@@ -56,7 +64,7 @@
         </header>
 
         <main>
-            <section>
+            <section data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
                 <div class="titulo-imagen">
                     <h1>Distribuciones</h1>
                     <figure>
@@ -86,7 +94,7 @@
                 </div>
             </section>
 
-            <section class="titulo-parrafo">
+            <section data-aos="fade-right" class="titulo-parrafo">
                 <h2>¿Qué incluye una distribución de Linux?</h2>
                 <ul>
                     <li>
@@ -119,7 +127,7 @@
                 </ul>
             </section>
 
-            <section class="titulo-parrafo">
+            <section data-aos="fade-right" class="titulo-parrafo">
                 <h2>Distibuciones Linux más populares</h2>
                 <article >
                     <h3>Ubuntu</h3>
@@ -155,7 +163,7 @@
                     </div>
                 </article>
 
-                <article >
+                <article data-aos="fade-right" >
                     <h3>Linux Mint</h3>
                     <p>
                       Linux Mint es una distribución basada en Ubuntu que se orienta a usuarios que buscan una alternativa a Windows. Esta distro ofrece un entorno de escritorio intuitivo y altamente personalizable que es similar al entorno de Windows, lo que facilita la transición para nuevos usuarios de Linux. El objetivo de Linux Mint es ofrecer un sistema "listo para usar" con una experiencia de usuario sencilla, estable y eficiente.
@@ -187,7 +195,7 @@
                     </div>
                 </article>
 
-                <article >
+                <article data-aos="fade-right" >
                     <h3>Debian</h3>
                     <p>
                       Debian es una de las distribuciones más antiguas y respetadas de Linux. Es conocida por su estabilidad, seguridad y gran soporte de software. Debian se utiliza como base para muchas otras distribuciones populares, incluida Ubuntu. A diferencia de Ubuntu, Debian pone énfasis en la estabilidad a largo plazo, lo que la convierte en una excelente opción para servidores y sistemas que requieren alta fiabilidad.
@@ -216,7 +224,7 @@
                     </div>
                 </article>
 
-                <article >
+                <article data-aos="fade-right" >
                     <h3>Fedora</h3>
                     <p>
                       Fedora es una distribución patrocinada por Red Hat que se destaca por ser una de las más avanzadas en términos de software y tecnologías. Es conocida por ofrecer lo último en software libre y de código abierto, lo que la convierte en una excelente opción para desarrolladores y entusiastas que desean tener las versiones más recientes de herramientas y aplicaciones. Fedora sigue un ciclo de lanzamiento rápido, con nuevas versiones cada seis meses, lo que significa que siempre tiene las últimas características y actualizaciones. Sin embargo, este enfoque también significa que Fedora puede ser menos estable que distribuciones más conservadoras como Debian o Ubuntu, lo que puede ser un factor a considerar dependiendo de tus necesidades.
@@ -248,7 +256,7 @@
                     </div>
                 </article>
 
-                <article >
+                <article data-aos="fade-right" >
                     <h3>Arch Linux</h3>
                     <p>
                       Arch Linux es una distribución que sigue la filosofía de "KISS" (Keep It Simple, Stupid), lo que significa que ofrece un sistema base muy simple sobre el que el usuario puede construir lo que necesite. Arch es conocido por su enfoque minimalista y por ofrecer un sistema completamente personalizable. En lugar de proporcionar un sistema "listo para usar", Arch ofrece a los usuarios un lienzo en blanco para que configuren y personalicen su sistema desde cero. Arch utiliza un modelo de lanzamiento continuo, lo que significa que siempre se tiene acceso a las últimas versiones de software sin necesidad de esperar por grandes actualizaciones. Esta característica es ideal para usuarios avanzados que desean estar a la vanguardia de las tecnologías de software.
@@ -281,7 +289,7 @@
                 </article>
             </section>
 
-            <section class="titulo-parrafo">
+            <section data-aos="fade-right" class="titulo-parrafo">
                 <h2>Entorno de escritorio</h2>
                 <p>
                   Al elegir una distribución de Linux, también estarás eligiendo un entorno de escritorio por defecto. Cada distribución tiene su propio enfoque en cuanto al entorno gráfico que ofrece, y esto es algo que deberás considerar dependiendo de tus preferencias de uso.
@@ -319,7 +327,7 @@
                     </p>
                 </section>
 
-                <section >
+                <section data-aos="fade-right" >
                     <h4>KDE Plasma</h4>
                     <p>
                       KDE Plasma es otro de los entornos de escritorio más populares, conocido por su apariencia visualmente atractiva y altamente personalizable. Plasma ofrece una gran cantidad de características y herramientas para personalizar cada aspecto de tu escritorio. Algunas características clave de KDE
@@ -348,7 +356,7 @@
                     </div>
                 </section>
 
-                <section >
+                <section data-aos="fade-right" >
                     <h4>Gestores de ventanas Tiling</h4>
                     <p>
                       Los gestores de ventanas tiling (mosaico) son un tipo de entorno que organiza las ventanas de manera eficiente sin necesidad de usar el ratón. En lugar de colocar las ventanas en el escritorio como si fueran bloques flotantes, los gestores tiling las organizan automáticamente en mosaico para aprovechar al máximo el espacio disponible. Son populares entre usuarios avanzados que prefieren usar el teclado en lugar del ratón para manejar las ventanas.
@@ -410,6 +418,11 @@
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <!-- aos -->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+        AOS.init();
+        </script>
 
     </body>
 </html>

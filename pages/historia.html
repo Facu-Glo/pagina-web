@@ -10,6 +10,8 @@
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
         />
+        <!-- aos -->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         <!-- archivo css-->
         <link rel="stylesheet" href="../styles/style.css" />
         <title>Historia</title>
@@ -17,7 +19,7 @@
     <body>
         <header>
             <nav class="navbar">
-                <a class="logo animate__animated animate__pulse" href="../index.html">
+                <a class="logo animate__animated animate__bounce" href="../index.html">
                     <img  src="../assets/img/logo.png" alt="ZoneTech Logo"/>
                 </a>
                 <label for="check" class="checkbtn">
@@ -62,7 +64,7 @@
         </header>
 
         <main>
-            <section class="titulo-parrafo">
+            <section data-aos="fade-right" class="titulo-parrafo">
                 <h1 class="animate__animated animate__fadeInLeftBig">🐧 Historia</h1>
                 <p>
                     En los años 60, las computadoras eran gigantescas máquinas, y el desarrollo de software enfrentaba grandes limitaciones. Para programar cualquier aplicación, era necesario usar lenguaje ensamblador, un conjunto de instrucciones de bajo nivel específicas para cada procesador. Esto significaba que cada aplicación debía reescribirse desde cero para funcionar en una máquina diferente, haciendo el proceso extremadamente tedioso y poco práctico. 
@@ -92,7 +94,7 @@
                 </div>
             </section>
 
-            <section class="titulo-parrafo">
+            <section data-aos="fade-right" class="titulo-parrafo">
                 <h2>Estructura de Unix</h2>
                 <p>Unix se compone de tres capas principales:</p>
                 <div class="lista-imagen">
@@ -121,7 +123,7 @@
                 </p>
             </section>
 
-            <section class="titulo-parrafo">
+            <section data-aos="fade-left" class="titulo-parrafo">
                 <div class="imagen-derecha">
                     <div>
                         <h2>El nacimiento del proyecto GNU y Linux</h2>
@@ -154,7 +156,7 @@
                 </div>
             </section>
 
-            <section class="titulo-parrafo">
+            <section data-aos="fade-right" class="titulo-parrafo">
                 <h2 class="segundoTitulo">Impacto de Linux</h2>
                 <p class="parrafo">
                   Desde su creación, GNU/Linux ha revolucionado el mundo de la informática. No solo se convirtió en la base de sistemas operativos para servidores y supercomputadoras, sino que también impulsó el desarrollo de tecnologías modernas como Android. Gracias a su modelo de código abierto, GNU/Linux sigue evolucionando a través de la colaboración global, manteniéndose fiel a los principios de libertad y accesibilidad que inspiraron su creación.
@@ -175,5 +177,10 @@
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <!-- aos -->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+        AOS.init();
+        </script>
     </body>
 </html>
