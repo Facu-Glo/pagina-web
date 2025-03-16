@@ -34,12 +34,12 @@
       text-align: center;
       border: 2px solid map-get($bordes, "caja");
       border-radius: 10px;
-      gap: 20px;
+      gap: $esp-gap;
       width: 400px;
 
       figure{
         @include flex(flex-start, column, stretch, nowrap);
-        gap: 20px;
+        gap: $esp-gap;
         width: 100%;
 
         img{

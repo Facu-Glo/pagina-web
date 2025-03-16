@@ -1,7 +1,7 @@
 .cajas{
   @include flex(flex-start, column, stretch, nowrap);
   @include espacio(100%, 12px, auto, 1050px);
-  gap: 20px;
+  gap: $esp-gap;
 
   article{
     background-color: map-get($fondos, "caja");

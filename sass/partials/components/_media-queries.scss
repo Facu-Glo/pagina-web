@@ -9,7 +9,7 @@
         position: static;
         width: auto;
         height: auto;
-        gap: 20px;
+        gap: $esp-gap;
         margin: 0;
 
         a{
@@ -78,14 +78,14 @@
 
   .imagen-derecha{
     display: flex;
-    gap: 40px;
+    gap: $esp-gap * 2;
   }
 
   .lista-imagen{
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 20px;
+    gap: $esp-gap;
     padding-bottom: 20px;
 
     li{

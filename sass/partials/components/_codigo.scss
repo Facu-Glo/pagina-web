@@ -14,12 +14,10 @@ code {
     border-bottom: solid 0.5px map-get($colores, "gris");
 
     button {
-      background-color: map-get($colores, "celeste");
-      border: none;
-      padding: 5px 10px;
+      @include button-styles(map-get($colores, "celeste"), map-get($colores, "cyan"), map-get($colores, "blanco"));
       font-size: 14px;
-      border-radius: 5px;
-      cursor: pointer;
+      padding: 5px 10px;
+      margin: 0;
     }
   }
 

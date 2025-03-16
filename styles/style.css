@@ -256,12 +256,22 @@ code {
   border-bottom: solid 0.5px #6d6688;
 }
 .codigo .boton-codigo button {
-  background-color: #8aadf4;
+  background: #8aadf4;
+  color: #FFFFFF;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 10px 20px;
   border: none;
-  padding: 5px 10px;
-  font-size: 14px;
   border-radius: 5px;
   cursor: pointer;
+  margin-top: 20px;
+  transition: background 0.3s;
+  font-size: 14px;
+  padding: 5px 10px;
+  margin: 0;
+}
+.codigo .boton-codigo button:hover {
+  background: #91d7e3;
 }
 .codigo .comando {
   display: flex;
