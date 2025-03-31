@@ -132,10 +132,14 @@ footer p svg {
   padding-bottom: 16px;
   font-size: 18px;
 }
-.titulo-parrafo li {
+.titulo-parrafo ul li {
   list-style: outside;
   margin: 20px;
   font-size: 20px;
+}
+.titulo-parrafo ul ul li {
+  font-size: 18px;
+  list-style: none;
 }
 .titulo-parrafo .centrar {
   display: flex;

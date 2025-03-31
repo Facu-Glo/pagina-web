@@ -19,10 +19,19 @@
     padding-bottom: 16px;
     font-size: 18px;
   }
-  li{
-    list-style: outside;
-    margin: 20px;
-    font-size: 20px;
+  ul {
+    li{
+      list-style: outside;
+      margin: 20px;
+      font-size: 20px;
+    }
+
+    ul{
+      li{
+        font-size: 18px;
+        list-style: none;
+      }
+    }
   }
 
   .centrar {
