@@ -23,13 +23,14 @@
     li{
       list-style: outside;
       margin: 20px;
-      font-size: 20px;
+      font-size: 22px;
     }
 
     ul{
       li{
         font-size: 18px;
         list-style: none;
+        color: map-get($colores , "azul-cielo" );
       }
     }
   }
